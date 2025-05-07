@@ -11,7 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Pretendard" !important;
+  font-family: "Pretendard";
 }
 html,
 body {
@@ -48,13 +48,15 @@ button {
   justify-content: center;
 }
 @media (max-width: 1023px) {
-  html {
+  html,
+  body {
     font-size: 15px;
   }
 }
 
 @media (max-width: 767px) {
-  html {
-    font-size: 14px;
+  html,
+  body {
+    font-size: 13px;
   }
 }

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "LOTTERIACHAB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --point_color1: #85d4ff;
   --point_color2: #b6abfd;
@@ -12,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 160px 40px;
+  padding: 160px 16px;
 }
 /* 공통 */
 .sticky {
@@ -75,7 +82,7 @@ main::after {
     opacity: 0.5;
   }
 }
-h1 {
+.desktop_h1 {
   font-size: 4rem;
   font-weight: 700;
   background-image: linear-gradient(
@@ -86,6 +93,9 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+.mobile_h1 {
+  display: none;
 }
 h2 {
   margin: 32px 0;
@@ -143,6 +153,9 @@ nav ul li:not(:first-child) {
 section {
   margin-top: 240px;
   max-width: 964px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h3 {
   font-size: 1rem;
@@ -189,6 +202,9 @@ h4 {
   z-index: -1;
 }
 /* 프로필 */
+.profile-cont {
+  width: 100%;
+}
 .profile-cont li {
   display: flex;
   column-gap: 24px;
@@ -263,6 +279,110 @@ h4 {
   font-weight: 500;
   color: var(--text3);
 }
+/* 기술스택 */
+.tools-cont {
+  margin-top: 40px;
+  width: 19rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tools-cont li {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+.tools-cont li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #00000021;
+}
+.tools-cont li span {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 5px 8px;
+  background-color: var(--text1);
+  color: #fff;
+  z-index: 1;
+  font-size: 0.875rem;
+  display: none;
+}
+.tools-cont li:hover span {
+  display: block;
+}
+/* 프로젝트 */
+.project-tile-wrap {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.project-tile {
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid var(--bg_grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-tile-top img {
+  height: 1.5rem;
+  margin-bottom: 16px;
+}
+.project-tile-top p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text1);
+}
+.project-tile-top span {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text3);
+}
+.project-tile .tools-cont {
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.project-tile .tools-cont li {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.project-tile:hover {
+  background-color: #029342;
+}
+.project-tile:nth-child(2):hover {
+  background-color: #07458b;
+}
+.project-tile:nth-child(3):hover {
+  background-color: #24378d;
+}
+.project-tile:nth-child(4):hover {
+  background-color: #2e1d1d;
+}
+.project-tile:hover .project-tile-top img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+.project-tile:hover .project-tile-top p {
+  color: #fff;
+}
+/* 반응형 */
+@media (max-width: 1023px) {
+  .project-tile {
+    width: calc(100% / 3 - 4rem / 3);
+  }
+}
 @media (max-width: 767px) {
   .profile-cont li {
     flex-direction: column;
@@ -275,5 +395,29 @@ h4 {
     flex-direction: column;
     row-gap: 32px;
     max-width: 450px;
+  }
+  .desktop_h1 {
+    display: none;
+  }
+  .mobile_h1 {
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: center;
+  }
+  .mobile_h1 span {
+    font-family: "LOTTERIACHAB";
+    font-size: 4rem;
+    border-radius: 50%;
+    color: var(--point_color1);
+  }
+  .mobile_h1 span:nth-child(2) {
+    color: var(--point_color2);
+  }
+  .mobile_h1 span:nth-child(3) {
+    color: var(--point_color3);
+  }
+  .project-tile {
+    width: 100%;
+    height: auto;
   }
 }

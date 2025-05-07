@@ -57,7 +57,7 @@ function Home() {
 
   return (
     <main>
-      <h1>
+      <h1 className="desktop_h1">
         I'm&nbsp;&#123;
         {isComplete ? (
           <span>{words[words.length - 1]}</span>
@@ -66,7 +66,17 @@ function Home() {
         )}
         &#125;
       </h1>
-
+      <h1 className="mobile_h1">
+        <span data-aos="fade-down" data-aos-delay="100">
+          C
+        </span>
+        <span data-aos="fade-down" data-aos-delay="300">
+          S
+        </span>
+        <span data-aos="fade-down" data-aos-delay="600">
+          Y
+        </span>
+      </h1>
       <h2>
         안녕하세요
         <br />
