@@ -1,10 +1,24 @@
 import ToolsCont from "../devtools/ToolsCont";
 
-function ProjectTile({ title, cont, logo, devItems, type }) {
+function ProjectTile({
+  title,
+  cont,
+  logo,
+  devItems,
+  type,
+  index,
+  onClick,
+  design,
+}) {
   return (
-    <li className="project-tile">
+    <li
+      className="project-tile"
+      {...(typeof index !== "undefined" ? { key: index } : {})}
+      {...(onClick ? { onClick } : {})}
+      {...(design ? { design } : {})}
+    >
       <div className="project-tile-top">
-        <img src={logo} />
+        <img src={logo} alt={title} />
         <p>{title}</p>
         <p>
           {type === "web"
@@ -17,7 +31,7 @@ function ProjectTile({ title, cont, logo, devItems, type }) {
         </p>
         <span>{cont}</span>
       </div>
-      <ToolsCont items={devItems} type={type} />
+      <ToolsCont items={devItems} type={type} design={design} />
     </li>
   );
 }

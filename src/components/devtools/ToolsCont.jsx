@@ -1,15 +1,22 @@
-function ToolsCont({ items, type = "all" }) {
+function ToolsCont({ items, type = "all", design = "" }) {
   let filteredItems = [];
 
   if (type === "all") {
     // "all"일 경우 모든 툴을 표시
     filteredItems = items;
   } else if (type === "web" || type === "webapp") {
-    filteredItems = items.slice(5, 9); // tool6.png ~ tool9.png
+    filteredItems = items.slice(5, 8); // tool5.png ~ tool7.png
   } else if (type === "flutter") {
-    filteredItems = items.slice(10, 11); // tool11.png
+    filteredItems = items.slice(9, 10); // tool9.png
   } else if (type === "react") {
-    filteredItems = items.slice(9, 10); // tool10.png
+    filteredItems = items.slice(8, 9); // tool18.png
+  }
+
+  // design 필터 추가
+  if (design === "figma") {
+    filteredItems = [...filteredItems, items[10]];
+  } else if (design === "xd") {
+    filteredItems = [...filteredItems, items[2]];
   }
 
   return (

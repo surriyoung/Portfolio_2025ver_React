@@ -20,10 +20,11 @@ const toolNames = [
   "HTML",
   "CSS",
   "JavaScript",
-  "jQueruy",
   "React",
   "Flutter",
   "Figma",
+  "jQueruy",
+  "Vite",
 ];
 
 const devItems = imageList.map((img, index) => ({

@@ -67,20 +67,22 @@ function Home() {
         &#125;
       </h1>
       <h1 className="mobile_h1">
+        &#123;
         <span data-aos="fade-down" data-aos-delay="100">
-          C
+          I
         </span>
         <span data-aos="fade-down" data-aos-delay="300">
-          S
+          '
         </span>
         <span data-aos="fade-down" data-aos-delay="600">
-          Y
+          m
         </span>
+        &#125;
       </h1>
       <h2>
-        안녕하세요
+        퍼블리셔를 넘어
         <br />
-        프론트엔드 개발자
+        프론트엔드로 성장하는
         <br />
         <strong>최수영</strong>입니다.
       </h2>

@@ -43,7 +43,7 @@ const profileData3 = [
   {
     date: "2023.09",
     title: "웹디자인기능사",
-    description: "UI 구성 및 시안 제작 능력 인증",
+    description: "UI 구성 및 시안 제작 능력 검정",
   },
 ];
 
