@@ -25,9 +25,9 @@ function App() {
       <Nav />
       <PowerSkills />
       <DevTools />
-      <Profile />
       <WorkProjects />
       <ToyProjects />
+      <Profile />
     </>
   );
 }

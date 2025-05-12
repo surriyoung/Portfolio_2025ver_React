@@ -1,4 +1,4 @@
-// src/components/WorkProjects.jsx
+import React, { useRef } from "react";
 import ProjectTile from "../components/projects/ProjectTile";
 import SubTitle from "../components/SubTitle";
 import Title from "../components/Title";
@@ -6,7 +6,7 @@ import workProjectsData from "../data/workProjectsData";
 
 function WorkProjects() {
   return (
-    <section data-aos="fade-up">
+    <section id="projects" data-aos="fade-up">
       <Title title="실무 프로젝트" />
       <SubTitle>
         반응형 웹 퍼블리싱, 웹앱 퍼블리싱, 플러터 앱 개발을 통해

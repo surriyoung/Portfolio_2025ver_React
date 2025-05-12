@@ -56,7 +56,7 @@ function Home() {
   }, [charIndex, isDeleting, wordIndex, pause, isComplete]);
 
   return (
-    <main>
+    <main id="home">
       <h1 className="desktop_h1">
         I'm&nbsp;&#123;
         {isComplete ? (
