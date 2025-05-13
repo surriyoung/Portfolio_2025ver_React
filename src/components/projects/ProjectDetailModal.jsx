@@ -80,7 +80,7 @@ function ProjectDetailModal({ onClose, project }) {
           {/* 로딩 중이면 로딩 컴포넌트, 아니면 실제 내용 표시 */}
           {isLoading ? (
             <div className="modal-loading">
-              <Loading cont="이미지를 불러오는 중입니다." />
+              <Loading />
             </div>
           ) : (
             <img src={details.screenshot} alt="프로젝트 스크린샷" />

@@ -1,11 +1,11 @@
-import Spinner from "../assets/spinner.gif";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
-const Loading = ({ cont }) => {
+const Loading = () => {
   return (
-    <>
-      <span>{cont}</span>
-      <img src={Spinner} alt="로딩중" width="5%" />
-    </>
+    <div style={{ width: "100%", aspectRatio: "625 / 409" }}>
+      <Skeleton height="100%" style={{ borderRadius: "10px" }} />
+    </div>
   );
 };
 
