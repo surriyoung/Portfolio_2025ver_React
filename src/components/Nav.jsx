@@ -21,9 +21,9 @@ function Nav() {
           <span></span>
           <span></span>
         </li>
-        <li onClick={() => scrollToSection("skills")}>Skills</li>
-        <li onClick={() => scrollToSection("projects")}>Projects</li>
-        <li onClick={() => scrollToSection("about")}>About</li>
+        <li onClick={() => scrollToSection("skills")}>역량</li>
+        <li onClick={() => scrollToSection("about")}>프로필</li>
+        <li onClick={() => scrollToSection("projects")}>프로젝트</li>
       </ul>
     </nav>
   );

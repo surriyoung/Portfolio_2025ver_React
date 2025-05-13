@@ -50,14 +50,17 @@ function ToyProjects() {
   const handleCloseModal = () => setSelectedProject(null);
 
   return (
-    <section data-aos="fade-up">
+    <section className="toy-project" data-aos="fade-up">
       <Title title="사이드 프로젝트" />
       <SubTitle>
         실전 감각을 기르기 위해 다양한 프로젝트를 개발하며
         <br />
         프론트엔드 기술에 대한 깊이를 더했습니다.
       </SubTitle>
-
+      {/* <ul className="project-tab">
+        <li>프론트개발</li>
+        <li>디자인</li>
+      </ul> */}
       <ul className="project-tile-wrap">
         {projects.map((project, index) => (
           <ProjectTile

@@ -29,7 +29,7 @@ const skillItems = [
 function PowerSkills() {
   return (
     <section id="skills" data-aos="fade-up">
-      <Title title="핵심역량" />
+      <Title title="주요 강점" />
       <SubTitle>
         창의적인 디자인과 효율적인 개발을 결합하여,
         <br />

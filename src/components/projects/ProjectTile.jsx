@@ -27,7 +27,7 @@ function ProjectTile({
             ? "웹앱 퍼블리싱"
             : type === "flutter"
             ? "플러터 앱 개발"
-            : "리액트 학습"}
+            : "리액트 프론트 개발 "}
         </p>
         <span>{cont}</span>
       </div>

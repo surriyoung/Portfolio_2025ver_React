@@ -11,7 +11,8 @@ function ProjectDetailModal({ onClose, project }) {
     };
   }, []);
 
-  const { logo, title, details, devItems, type } = project;
+  const { logo, title, details, devItems, type, design } = project;
+  const { shortcut } = details;
 
   return ReactDOM.createPortal(
     <div className="modal-bg">
@@ -30,7 +31,21 @@ function ProjectDetailModal({ onClose, project }) {
           </li>
           <li>
             <span className="tit">사용기술</span>
-            <ToolsCont items={devItems} type={type} /> {/* ToolsCont 추가 */}
+            <ToolsCont items={devItems} type={type} design={design} />
+          </li>
+          <li className="flex">
+            <div>
+              <span className="tit">작업유형</span>
+              <p>{details.projectType}</p>
+            </div>
+            {shortcut && (
+              <div>
+                <span className="tit">관련 링크</span>
+                <a href={shortcut} target="_blank" rel="noopener noreferrer">
+                  <p>사이트</p>
+                </a>
+              </div>
+            )}
           </li>
         </ul>
         <span className="line"></span>
