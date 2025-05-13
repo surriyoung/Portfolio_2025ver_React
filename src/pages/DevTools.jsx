@@ -34,7 +34,7 @@ const devItems = imageList.map((img, index) => ({
 
 function DevTools() {
   return (
-    <section data-aos="fade-up">
+    <section class="observe-target skills" data-aos="fade-up">
       <Title title="기술 스택" />
       <SubTitle>아래의 디자인 툴과 개발 기술을 활용합니다.</SubTitle>
       <ToolsCont items={devItems} />

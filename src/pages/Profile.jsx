@@ -16,17 +16,18 @@ const profileData2 = [
   {
     date: "2024.12 - 현재",
     title: "Open API를 활용한 스마트 웹 & 앱 콘텐츠실무개발자 양성과정",
-    description: "웹 퍼블리싱, 플랫폼 앱 개발(Flutter)",
+    description: "프론트엔드 기술 (JavaScript, TypeScript, React) 학습",
   },
   {
     date: "2023.03 - 2023.08",
     title: "반응형 웹디자인(UIUX) 실무 양성과정",
-    description: "웹 퍼블리싱, 플랫폼 앱 개발(Flutter)",
+    description:
+      "퍼블리셔 기술 (포토샵, 일러스트, 피그마, HTML, CSS, jQuery) 학습",
   },
   {
-    date: "2023.03 - 2023.08",
+    date: "2020.03 - 2023.02",
     title: "가톨릭대학교 공간디자인소비자학과·미디어기술콘텐츠학과",
-    description: "웹 퍼블리싱, 플랫폼 앱 개발(Flutter)",
+    description: "소비자학, 영상 콘텐츠 제작과 관련된 기술 및 이론 학습",
   },
 ];
 
@@ -50,7 +51,7 @@ const profileData3 = [
 
 function Profile() {
   return (
-    <section id="about" data-aos="fade-up">
+    <section class="observe-target about" id="about" data-aos="fade-up">
       <Title title="프로필" />
       <SubTitle>
         창의적인 웹 디자인과 반응형 웹 퍼블리싱,

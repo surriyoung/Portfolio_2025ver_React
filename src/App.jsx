@@ -10,6 +10,7 @@ import PowerSkills from "./pages/PowerSkills";
 import Profile from "./pages/Profile";
 import ToyProjects from "./pages/ToyProjects";
 import WorkProjects from "./pages/WorkProjects";
+import TopBtn from "./components/TopBtn";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,8 @@ function App() {
       <Profile />
       <WorkProjects />
       <ToyProjects />
+      <TopBtn />
+      <footer>감사합니다.</footer>
     </>
   );
 }

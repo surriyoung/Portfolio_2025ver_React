@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import ProjectTile from "../components/projects/ProjectTile";
+import ProjectDetailModal from "../components/projects/ProjectDetailModal"; // 모달 컴포넌트 임포트
 import SubTitle from "../components/SubTitle";
 import Title from "../components/Title";
 import workProjectsData from "../data/workProjectsData";
 
 function WorkProjects() {
   const [selectedTab, setSelectedTab] = useState("all");
+  const [selectedProject, setSelectedProject] = useState(null); // 선택된 프로젝트 상태
 
   const handleTabClick = (type) => {
     setSelectedTab(type);
@@ -20,8 +22,20 @@ function WorkProjects() {
     return false;
   });
 
+  const handleOpenModal = (project) => {
+    setSelectedProject(project); // 프로젝트 선택 시 모달 열기
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null); // 모달 닫기
+  };
+
   return (
-    <section id="projects" className="work-project" data-aos="fade-up">
+    <section
+      className="observe-target projects work-project"
+      id="projects"
+      data-aos="fade-up"
+    >
       <Title title="실무 프로젝트" />
       <SubTitle>
         반응형 웹 퍼블리싱, 웹앱 퍼블리싱, 플러터 앱 개발을 통해
@@ -58,11 +72,18 @@ function WorkProjects() {
             title={project.title}
             cont={project.cont}
             type={project.type}
-            design={project.design}
             devItems={project.devItems}
+            onClick={() => handleOpenModal(project)} // 클릭 시 모달 열기
           />
         ))}
       </ul>
+
+      {selectedProject && (
+        <ProjectDetailModal
+          onClose={handleCloseModal}
+          project={selectedProject} // 선택된 프로젝트의 details를 전달
+        />
+      )}
     </section>
   );
 }

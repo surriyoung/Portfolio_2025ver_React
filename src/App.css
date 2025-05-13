@@ -30,6 +30,11 @@
 .flex {
   display: flex;
 }
+/* 푸터 */
+footer {
+  margin-top: 240px;
+  font-size: 2.8rem;
+}
 /* 메인 */
 main {
   text-align: center;
@@ -154,6 +159,21 @@ nav ul li:first-child span:nth-child(3) {
 nav ul li.on {
   background-color: #fff;
   border-radius: 30px;
+}
+.top-btn {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--bg_grey_trans);
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 0px 4px #00000021;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+.top-btn:hover {
+  background-color: var(--bg_grey);
 }
 /* section */
 section {
@@ -449,6 +469,15 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+.modal-loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-loading img {
+  width: 2rem;
+}
 .modal {
   background: #fff;
   padding: 32px;
@@ -466,6 +495,8 @@ h4 {
 }
 .modal > img {
   width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
   border-radius: 10px;
 }
 .modal-tit {
@@ -523,8 +554,13 @@ h4 {
 }
 @media (max-width: 768px) {
   nav {
-    background-color: var(--bg_grey);
-    backdrop-filter: unset;
+    padding: 0 8px;
+  }
+  nav ul li:first-child {
+    display: none;
+  }
+  .top-btn {
+    display: flex;
   }
   .profile-cont li {
     flex-direction: column;

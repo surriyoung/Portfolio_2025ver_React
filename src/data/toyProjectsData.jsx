@@ -14,7 +14,7 @@ export const getToyProjects = (devItems) => [
     devItems,
     details: {
       overview:
-        "스카이덕디자인업체의 의뢰로 진행된 프로젝트입니다. Flutter 앱에서 의뢰 신청 시 PHP 서버의 API를 호출하여 데이터를 DB에 저장하고, 동시에 푸시 알림을 전송하는 알림 기반 서비스입니다. 실시간 의뢰 처리와 사용자 알림을 연동하여 효율적인 요청 관리가 가능합니다. Android용 APK 파일로 빌드하여 제공되었습니다",
+        "스카이덕디자인업체의 의뢰로 진행된 프로젝트입니다. PHP로 개발된 웹페이지에서 의뢰 신청 시, 앱에 푸시 알림이 전송되고 의뢰 내역이 실시간으로 표시되는 견적 알림 앱을 구현했습니다. Android용 APK 파일로 빌드하여 제공되었습니다",
       screenshot: Screenshot1,
       projectType: "외주 프로젝트",
     },
