@@ -161,7 +161,7 @@ nav ul li.on {
   border-radius: 30px;
 }
 .top-btn {
-  display: none;
+  display: flex;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -171,9 +171,18 @@ nav ul li.on {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .top-btn:hover {
   background-color: var(--bg_grey);
+}
+.top-btn.on {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 /* section */
 section {
@@ -557,9 +566,6 @@ h4 {
   }
   nav ul li:first-child {
     display: none;
-  }
-  .top-btn {
-    display: flex;
   }
   .profile-cont li {
     flex-direction: column;

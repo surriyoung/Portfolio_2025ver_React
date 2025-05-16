@@ -35,7 +35,7 @@ function Nav() {
         }
       },
       {
-        threshold: 0.3,
+        threshold: 0,
       }
     );
 
