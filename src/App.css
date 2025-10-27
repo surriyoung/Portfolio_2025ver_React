@@ -384,8 +384,9 @@ h4 {
   gap: 2rem;
 }
 .project-tile {
-  width: 18.75rem;
-  height: 18.75rem;
+  aspect-ratio: 1 / 1;
+  width: calc(100% / 3 - 4rem / 3);
+  height: auto;
   border-radius: 10px;
   padding: 24px;
   border: 1px solid var(--bg_grey);
@@ -448,6 +449,30 @@ h4 {
 }
 .work-project .project-tile:nth-child(10):hover {
   background-color: #eb5e26;
+}
+.work-project .project-tile:nth-child(11):hover {
+  background-color: #054A97;
+}
+.work-project .project-tile:nth-child(12):hover {
+  background-color: #4E2FC1;
+}
+.work-project .project-tile:nth-child(13):hover {
+  background-color: #554C42;
+}
+.work-project .project-tile:nth-child(14):hover {
+  background-color: #003CFF;
+}
+.work-project .project-tile:nth-child(15):hover {
+  background-color: #003BFF;
+}
+.work-project .project-tile:nth-child(16):hover {
+  background-color: #B49E8F;
+}
+.work-project .project-tile:nth-child(17):hover {
+  background-color: #D36B82;
+}
+.work-project .project-tile:nth-child(18):hover {
+  background-color: #003366;
 }
 .toy-project .project-tile:nth-child(1):hover {
   background-color: #1558a5;
@@ -555,10 +580,8 @@ h4 {
   text-decoration: underline;
 }
 /* 반응형 */
-@media (max-width: 1280px) {
-  .project-tile-wrap {
-    width: 39.5rem;
-  }
+@media (max-width: 930px) {
+  .project-tile {width: calc(100% / 2 - 2rem / 2);}
 }
 @media (max-width: 768px) {
   nav {
@@ -607,10 +630,11 @@ h4 {
   .mobile_h1 span:nth-child(3) {
     color: var(--point_color3);
   }
-  .project-tile-wrap {
+  /* .project-tile-wrap {
     width: 100%;
-  }
+  } */
   .project-tile {
+    aspect-ratio: unset;
     width: 100%;
     height: auto;
   }

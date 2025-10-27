@@ -1,19 +1,28 @@
 import React, { useState } from "react";
 import ProjectTile from "../components/projects/ProjectTile";
-import ProjectDetailModal from "../components/projects/ProjectDetailModal"; // 모달 컴포넌트 임포트
+import ProjectDetailModal from "../components/projects/ProjectDetailModal";
 import SubTitle from "../components/SubTitle";
 import Title from "../components/Title";
 import workProjectsData from "../data/workProjectsData";
 
 function WorkProjects() {
   const [selectedTab, setSelectedTab] = useState("all");
-  const [selectedProject, setSelectedProject] = useState(null); // 선택된 프로젝트 상태
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleTabClick = (type) => {
     setSelectedTab(type);
   };
 
-  // 필터링 조건
+  // 각 타입별 개수 계산
+  const totalCount = workProjectsData.length;
+  const publishingCount = workProjectsData.filter(
+    (p) => p.type === "web" || p.type === "webapp"
+  ).length;
+  const flutterCount = workProjectsData.filter(
+    (p) => p.type === "flutter"
+  ).length;
+
+  // 선택된 탭에 따른 필터링
   const filteredProjects = workProjectsData.filter((project) => {
     if (selectedTab === "all") return true;
     if (selectedTab === "flutter") return project.type === "flutter";
@@ -22,13 +31,8 @@ function WorkProjects() {
     return false;
   });
 
-  const handleOpenModal = (project) => {
-    setSelectedProject(project); // 프로젝트 선택 시 모달 열기
-  };
-
-  const handleCloseModal = () => {
-    setSelectedProject(null); // 모달 닫기
-  };
+  const handleOpenModal = (project) => setSelectedProject(project);
+  const handleCloseModal = () => setSelectedProject(null);
 
   return (
     <section
@@ -48,19 +52,19 @@ function WorkProjects() {
           className={selectedTab === "all" ? "on" : ""}
           onClick={() => handleTabClick("all")}
         >
-          전체
+          전체 <span className="count">({totalCount})</span>
         </li>
         <li
           className={selectedTab === "publishing" ? "on" : ""}
           onClick={() => handleTabClick("publishing")}
         >
-          퍼블리싱
+          퍼블리싱 <span className="count">({publishingCount})</span>
         </li>
         <li
           className={selectedTab === "flutter" ? "on" : ""}
           onClick={() => handleTabClick("flutter")}
         >
-          앱개발
+          앱개발 <span className="count">({flutterCount})</span>
         </li>
       </ul>
 
@@ -73,7 +77,7 @@ function WorkProjects() {
             cont={project.cont}
             type={project.type}
             devItems={project.devItems}
-            onClick={() => handleOpenModal(project)} // 클릭 시 모달 열기
+            onClick={() => handleOpenModal(project)}
           />
         ))}
       </ul>
@@ -81,7 +85,7 @@ function WorkProjects() {
       {selectedProject && (
         <ProjectDetailModal
           onClose={handleCloseModal}
-          project={selectedProject} // 선택된 프로젝트의 details를 전달
+          project={selectedProject}
         />
       )}
     </section>

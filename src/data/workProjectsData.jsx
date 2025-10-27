@@ -10,6 +10,12 @@ import Logo8 from "../assets/projects/work/logo8.png";
 import Logo9 from "../assets/projects/work/logo9.png";
 import Logo10 from "../assets/projects/work/logo10.png";
 import Logo11 from "../assets/projects/work/logo11.png";
+import Logo12 from "../assets/projects/work/logo12.svg";
+import Logo13 from "../assets/projects/work/logo13.svg";
+import Logo14 from "../assets/projects/work/logo14.svg";
+import Logo15 from "../assets/projects/work/logo15.svg";
+import Logo16 from "../assets/projects/work/logo16.svg";
+import Logo17 from "../assets/projects/work/logo17.svg";
 import Screenshot1 from "../assets/projects/work/detail/detail1.png";
 import Screenshot2 from "../assets/projects/work/detail/detail2.png";
 import Screenshot3 from "../assets/projects/work/detail/detail3.png";
@@ -21,6 +27,8 @@ import Screenshot8 from "../assets/projects/work/detail/detail8.png";
 import Screenshot9 from "../assets/projects/work/detail/detail9.png";
 import Screenshot10 from "../assets/projects/work/detail/detail10.png";
 import Screenshot11 from "../assets/projects/work/detail/detail11.png";
+// import Screenshot12 from "../assets/projects/work/detail/detail12.png";
+import Screenshot13 from "../assets/projects/work/detail/detail13.png";
 
 const toolImages = import.meta.glob("../assets/tools/*.png", { eager: true });
 
@@ -233,6 +241,119 @@ const workProjectsData = [
       shortcut:
         "https://play.google.com/store/apps/details?id=com.flash21.all_daegong_android",
       screenshot: Screenshot11,
+    },
+  },
+  {
+    logo: Logo12,
+    title: "영롱한마케팅 홈페이지",
+    cont: "디자인 100%, 퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "영롱한마케팅 홈페이지의 로고디자인, 웹디자인 및 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://ylmarketing.co.kr/",
+      screenshot: Screenshot3,
+    },
+  },
+  {
+    logo: Logo13,
+    title: "영롱한의원 홈페이지",
+    cont: "디자인 100%, 퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "영롱한마케팅 홈페이지의 로고디자인, 웹디자인 및 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://ylclinic2.ylmarketing.kr/",
+      screenshot: Screenshot3,
+    },
+  },
+  {
+    logo: Logo14,
+    title: "웹프림 홈페이지",
+    cont: "디자인 50%, 퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "웹프림 사이트의 로고디자인, 웹디자인 및 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다. 디자인팀과 협력하여 UI를 맞추고, 페이지 내의 다양한 기능들을 퍼블리싱하며 사이트를 완성했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      team: "디자인1, 프론트1, 백엔드1",
+      shortcut:
+        "https://webpreme.com/",
+      screenshot: Screenshot3,
+    },
+  },
+  {
+    logo: Logo14,
+    title: "웹프림 내부패널",
+    cont: "디자인 100%, 퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "웹프림 내부패널의 디자인 및 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://webpreme.com/portfolio/46",
+      screenshot: Screenshot13,
+    },
+  },
+  {
+    logo: Logo15,
+    title: "브리달메이",
+    cont: "디자인 100%, 퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "브리달메이 홈페이지의 로고디자인, 웹디자인 및 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://bridalmay.webpreme.net/",
+      screenshot: Screenshot13,
+    },
+  },
+  {
+    logo: Logo16,
+    title: "화장품쇼핑몰(진행중)",
+    cont: "디자인 100%, 퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "화장품 쇼핑몰 홈페이지의 디자인 및 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://webpreme.com/portfolio/56",
+      screenshot: Screenshot13,
+    },
+  },
+  {
+    logo: Logo17,
+    title: "로얄엔스",
+    cont: "퍼블리싱 100%",
+    type: "web",
+    devItems: devItems,
+    details: {
+      overview:
+        "화장품 쇼핑몰 홈페이지의 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다. 디자인팀과 협력하여 UI를 맞추고, 페이지 내의 다양한 기능들을 퍼블리싱하며 사이트를 완성했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://renewal.royal-anns.com/",
+      screenshot: Screenshot13,
     },
   },
 ];
