@@ -16,6 +16,7 @@ import Logo14 from "../assets/projects/work/logo14.svg";
 import Logo15 from "../assets/projects/work/logo15.svg";
 import Logo16 from "../assets/projects/work/logo16.svg";
 import Logo17 from "../assets/projects/work/logo17.svg";
+import NoImg from "../assets/projects/work/detail/noimg.png";
 import Screenshot1 from "../assets/projects/work/detail/detail1.png";
 import Screenshot2 from "../assets/projects/work/detail/detail2.png";
 import Screenshot3 from "../assets/projects/work/detail/detail3.png";
@@ -256,7 +257,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://ylmarketing.co.kr/",
-      screenshot: Screenshot3,
+      screenshot: NoImg,
     },
   },
   {
@@ -272,7 +273,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://ylclinic2.ylmarketing.kr/",
-      screenshot: Screenshot3,
+      screenshot: NoImg,
     },
   },
   {
@@ -289,7 +290,7 @@ const workProjectsData = [
       team: "디자인1, 프론트1, 백엔드1",
       shortcut:
         "https://webpreme.com/",
-      screenshot: Screenshot3,
+      screenshot: NoImg,
     },
   },
   {
@@ -305,7 +306,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://webpreme.com/portfolio/46",
-      screenshot: Screenshot13,
+      screenshot: NoImg,
     },
   },
   {
@@ -321,7 +322,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://bridalmay.webpreme.net/",
-      screenshot: Screenshot13,
+      screenshot: NoImg,
     },
   },
   {
@@ -337,7 +338,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://webpreme.com/portfolio/56",
-      screenshot: Screenshot13,
+      screenshot: NoImg,
     },
   },
   {
@@ -353,7 +354,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://renewal.royal-anns.com/",
-      screenshot: Screenshot13,
+      screenshot: NoImg,
     },
   },
 ];
