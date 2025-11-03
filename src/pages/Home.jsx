@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const words = ["a Publisher", "a Frontend", "surriyoung"];
+const words = ["a Designer","a Publisher", "a Frontend", "surriyoung"];
 
 function Home() {
   const [displayText, setDisplayText] = useState("");
@@ -80,15 +80,15 @@ function Home() {
         &#125;
       </h1>
       <h2>
-        퍼블리셔를 넘어
+        디자인부터 프론트까지,
         <br />
-        프론트엔드로 성장하는
+        감각과 코드를 잇는
         <br />
         <strong>최수영</strong>입니다.
       </h2>
 
       <p>
-        사용자 경험을 고려한 <strong>섬세한 퍼블리싱</strong>을 기반으로,
+        사용자 경험을 고려한 <strong>UI/UX</strong>와 <strong>섬세한 퍼블리싱</strong>을 기반으로,
         <br />
         <strong>JavaScript, React, Flutter</strong>를 활용해
         <br />

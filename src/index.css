@@ -51,16 +51,16 @@ button {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   html,
   body {
     font-size: 15px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   html,
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
 }

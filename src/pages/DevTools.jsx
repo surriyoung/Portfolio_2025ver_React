@@ -25,6 +25,8 @@ const toolNames = [
   "Figma",
   "jQueruy",
   "Vite",
+  "VLLO",
+  "그누보드5",
 ];
 
 const devItems = imageList.map((img, index) => ({
