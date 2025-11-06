@@ -212,6 +212,7 @@ h4 {
   font-weight: 500;
   text-align: center;
   color: var(--text1);
+  word-break: keep-all;
 }
 .profile-title {
   width: 100%;
@@ -653,6 +654,15 @@ h4 {
   }
 }
 @media (max-width: 480px) {
+  h2 {
+   font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  main p {
+    font-size: 0.9rem;
+  }
   .skills-cont {
     flex-direction: column;
     row-gap: 32px;
