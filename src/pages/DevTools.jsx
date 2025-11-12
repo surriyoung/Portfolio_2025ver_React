@@ -23,7 +23,7 @@ const toolNames = [
   "React",
   "Flutter",
   "Figma",
-  "jQueruy",
+  "jQuery",
   "Vite",
   "VLLO",
   "그누보드5",

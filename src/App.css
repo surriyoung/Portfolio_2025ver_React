@@ -282,10 +282,24 @@ h4 {
   color: var(--text1);
   margin-bottom: 8px;
 }
-.profile-cont .cont p:last-child {
+.profile-cont .cont .desc {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text3);
+  margin-bottom: 5px;
+}
+.profile-cont .cont .profile-leave-reason {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text3);
+}
+.profile-cont .cont .profile-leave-reason .label {
+  font-size: 0.875rem;
+  padding: 2px 3px;
+  border-radius: 3px; 
+  background-color: var(--bg_grey);
+  color: var(--text3);
+  margin-right: 3px;
 }
 /* 핵심역량 */
 .skills-cont {
@@ -485,6 +499,9 @@ h4 {
 .work-project .project-tile:nth-child(18):hover {
   background-color: #003366;
 }
+.work-project .project-tile:nth-child(19):hover {
+  background-color: #ff3232;
+}
 .toy-project .project-tile:nth-child(1):hover {
   background-color: #1558a5;
 }
@@ -670,6 +687,11 @@ h4 {
   }
   .skills-cont > li {
     width: 100%;
-    padding: 0;
+  }
+  .skills-cont > li:nth-child(odd) {
+    padding-bottom: 0;
+  }
+  .skills-cont > li:nth-child(even) {
+    padding-top: 0;
   }
 }

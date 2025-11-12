@@ -8,12 +8,26 @@ const profileData1 = [
   {
     date: "2025.05 - 현재",
     title: "웹프림",
-    description: "웹 퍼블리싱, 웹앱 개발(Flutter)",
+    description: "UI/UX 디자인, 웹 퍼블리싱, 웹앱 개발(Flutter)",
+    // 재직중이라면 leaveReason 생략
+  },
+  {
+    date: "2025.05 - 2025.07",
+    title: "영롱한마케팅",
+    description: "UI/UX 디자인, 웹 퍼블리싱",
+    leaveReason: "조직 개편 및 사업 방향 조정으로 웹프림으로 합류",
+  },
+  {
+    date: "2025.03 - 2025.05",
+    title: "비젼IPS",
+    description: "웹 퍼블리싱, 리액트 프론트앤드 개발",
+    leaveReason: "프론트엔드 고도화 프로젝트 종료",
   },
   {
     date: "2023.09 - 2024.10",
     title: "플래시21",
     description: "웹 퍼블리싱, 플랫폼 앱 개발(Flutter)",
+    leaveReason: "회사 경영 악화(급여 지연 및 업무 축소)",
   },
 ];
 

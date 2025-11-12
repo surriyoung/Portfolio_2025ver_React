@@ -16,6 +16,7 @@ import Logo14 from "../assets/projects/work/logo14.svg";
 import Logo15 from "../assets/projects/work/logo15.svg";
 import Logo16 from "../assets/projects/work/logo16.svg";
 import Logo17 from "../assets/projects/work/logo17.svg";
+import Logo18 from "../assets/projects/work/logo18.svg";
 import NoImg from "../assets/projects/work/detail/noimg.png";
 import Screenshot1 from "../assets/projects/work/detail/detail1.png";
 import Screenshot2 from "../assets/projects/work/detail/detail2.png";
@@ -52,8 +53,10 @@ const toolNames = [
   "React",
   "Flutter",
   "Figma",
-  "jQueruy",
+  "jQuery",
   "Vite",
+  "VLLO",
+  "그누보드5",
 ];
 
 const devItems = devList.map((img, index) => ({
@@ -248,7 +251,7 @@ const workProjectsData = [
     logo: Logo12,
     title: "영롱한마케팅 홈페이지",
     cont: "디자인 100%, 퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -264,7 +267,7 @@ const workProjectsData = [
     logo: Logo13,
     title: "영롱한의원 홈페이지",
     cont: "디자인 100%, 퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -280,7 +283,7 @@ const workProjectsData = [
     logo: Logo14,
     title: "웹프림 홈페이지",
     cont: "디자인 50%, 퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -297,7 +300,7 @@ const workProjectsData = [
     logo: Logo14,
     title: "웹프림 내부패널",
     cont: "디자인 100%, 퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -313,7 +316,7 @@ const workProjectsData = [
     logo: Logo15,
     title: "브리달메이",
     cont: "디자인 100%, 퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -329,7 +332,7 @@ const workProjectsData = [
     logo: Logo16,
     title: "화장품쇼핑몰(진행중)",
     cont: "디자인 100%, 퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -345,7 +348,7 @@ const workProjectsData = [
     logo: Logo17,
     title: "로얄엔스",
     cont: "퍼블리싱 100%",
-    type: "web",
+    type: "sir",
     devItems: devItems,
     details: {
       overview:
@@ -354,6 +357,22 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://renewal.royal-anns.com/",
+      screenshot: NoImg,
+    },
+  },
+  {
+    logo: Logo18,
+    title: "프리리셀아이티",
+    cont: "퍼블리싱 100%",
+    type: "sir",
+    devItems: devItems,
+    details: {
+      overview:
+        "프리리셀아이티의 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다. 디자인팀과 협력하여 UI를 맞추고, 페이지 내의 다양한 기능들을 퍼블리싱하며 사이트를 완성했습니다.",
+      screenshot: "상세 이미지 경로", // 예시
+      projectType: "실무 프로젝트",
+      shortcut:
+        "https://free.webpreme.net/",
       screenshot: NoImg,
     },
   },

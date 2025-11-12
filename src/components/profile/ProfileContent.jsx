@@ -9,7 +9,13 @@ function ProfileContent({ items }) {
           </div>
           <div className="cont">
             <p>{item.title}</p>
-            <p>{item.description}</p>
+            <p className="desc">{item.description}</p>
+            {item.leaveReason && (
+              <p className="profile-leave-reason">
+                <span className="label">이직사유</span>
+                <span className="text">{item.leaveReason}</span>
+              </p>
+            )}
           </div>
         </li>
       ))}

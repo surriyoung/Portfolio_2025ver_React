@@ -16,7 +16,7 @@ function WorkProjects() {
   // 각 타입별 개수 계산
   const totalCount = workProjectsData.length;
   const publishingCount = workProjectsData.filter(
-    (p) => p.type === "web" || p.type === "webapp"
+    (p) => p.type === "web" || p.type === "webapp" || p.type === "sir"
   ).length;
   const flutterCount = workProjectsData.filter(
     (p) => p.type === "flutter"
@@ -27,7 +27,7 @@ function WorkProjects() {
     if (selectedTab === "all") return true;
     if (selectedTab === "flutter") return project.type === "flutter";
     if (selectedTab === "publishing")
-      return project.type === "web" || project.type === "webapp";
+      return project.type === "web" || project.type === "webapp" || project.type === "sir";
     return false;
   });
 
