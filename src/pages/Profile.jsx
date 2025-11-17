@@ -70,7 +70,7 @@ const profileData3 = [
 
 function Profile() {
   return (
-    <section class="observe-target about" id="about" data-aos="fade-up">
+    <section className="observe-target about" id="about" data-aos="fade-up">
       <Title title="프로필" />
       <SubTitle>
         창의적인 웹 디자인과 반응형 웹 퍼블리싱,

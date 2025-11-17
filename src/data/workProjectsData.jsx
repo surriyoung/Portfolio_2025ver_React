@@ -352,7 +352,7 @@ const workProjectsData = [
     devItems: devItems,
     details: {
       overview:
-        "화장품 쇼핑몰 홈페이지의 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다. 디자인팀과 협력하여 UI를 맞추고, 페이지 내의 다양한 기능들을 퍼블리싱하며 사이트를 완성했습니다.",
+        "로얄엔스 홈페이지의 퍼블리싱을 맡아 HTML과 CSS를 이용해 페이지를 구현했습니다. 디자인팀과 협력하여 UI를 맞추고, 페이지 내의 다양한 기능들을 퍼블리싱하며 사이트를 완성했습니다.",
       screenshot: "상세 이미지 경로", // 예시
       projectType: "실무 프로젝트",
       shortcut:

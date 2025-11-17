@@ -68,7 +68,13 @@ function Nav() {
           className={activeSection === "projects" ? "on" : ""}
           onClick={() => scrollToSection("projects")}
         >
-          프로젝트
+          웹 작업물
+        </li>
+        <li
+          className={activeSection === "design" ? "on" : ""}
+          onClick={() => scrollToSection("design")}
+        >
+           디자인
         </li>
       </ul>
     </nav>

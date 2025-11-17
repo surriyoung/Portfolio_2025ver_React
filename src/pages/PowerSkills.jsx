@@ -35,7 +35,7 @@ const skillItems = [
 
 function PowerSkills() {
   return (
-    <section class="observe-target skills" id="skills" data-aos="fade-up">
+    <section className="observe-target skills" id="skills" data-aos="fade-up">
       <Title title="주요 강점" />
       <SubTitle>
         디자인부터 코드, 그리고 영상까지

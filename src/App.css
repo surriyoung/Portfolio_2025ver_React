@@ -580,12 +580,13 @@ h4 {
 }
 .modal-cont .tit {
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--text2);
   margin-bottom: 4px;
 }
 .modal-cont p {
-  font-size: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--text1);
 }
 .modal-cont .tools-cont {
@@ -607,16 +608,65 @@ h4 {
 .modal-cont > li a p {
   text-decoration: underline;
 }
+/* 디자인 작업물 */
+.design-tile-wrap {
+  width: 100%;
+  margin-top: 30px;
+  display: flex; flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.design-tile {
+  aspect-ratio: 3/4;
+  width: calc(100% / 3 - 4rem / 3);
+}
+.design-tile .thumb-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.design-tile .thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.2s;
+}
+.design-tile .thumb-wrap:hover img {
+  transform: scale(1.1);
+}
+.design-modal-cont .image-single {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  overflow-y: auto;
+}
+.banner .design-modal-cont .image-single {
+  aspect-ratio: unset;
+  width: 100%;
+  height: fit-content;
+  overflow-y: auto;
+}
+.design-modal-cont .image-single img {
+  width: 100%;
+  object-position: center;
+}
 /* 반응형 */
 @media (max-width: 930px) {
-  .project-tile {width: calc(100% / 2 - 2rem / 2);}
-  .skills-cont {flex-wrap: wrap;}
+  .skills-cont {
+    flex-wrap: wrap;
+  }
   .skills-cont > li {width: calc(100% / 2 - 32px / 2);}
   .skills-cont > li:nth-child(odd) {
     padding-bottom: 50px;
   }
   .skills-cont > li:nth-child(even) {
     padding-top: 50px;
+  }
+  .project-tile,
+  .design-tile {
+    width: calc(100% / 2 - 2rem / 2);
   }
 }
 @media (max-width: 768px) {
@@ -669,16 +719,26 @@ h4 {
     width: 100%;
     height: auto;
   }
+  .design-tile {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+  }
 }
 @media (max-width: 480px) {
+  #root {
+    padding: 160px 1rem;
+  }
   h2 {
    font-size: 2.4rem;
   }
   h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   main p {
     font-size: 0.9rem;
+  }
+  nav ul li {
+    padding: 8px;
   }
   .skills-cont {
     flex-direction: column;
@@ -693,5 +753,12 @@ h4 {
   }
   .skills-cont > li:nth-child(even) {
     padding-top: 0;
+  }
+  .project-tile-wrap,
+  .design-tile-wrap {
+    gap: 1rem;
+  }
+  .project-tab li {
+    padding: 8px;
   }
 }
