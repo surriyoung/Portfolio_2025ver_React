@@ -7,6 +7,7 @@ import Design06 from "../assets/design/event-page-pepsi.jpg";
 import Design07 from "../assets/design/event-page1.jpg";
 import Design08 from "../assets/design/event-page2.jpg";
 import Design09 from "../assets/design/blog2.jpg";
+import Design10 from "../assets/design/detailed-page3.png";
 
 const webDesignProjectsData = [
   {
@@ -22,6 +23,14 @@ const webDesignProjectsData = [
     title: "데코뷰 상세페이지",
     description:
       "소재와 사용감을 중심으로 편안한 라이프스타일을 표현한 홈데코 상세페이지입니다. 감성적인 톤과 따뜻한 연출 이미지로 브랜드 무드를 강조했습니다.",
+    type: "detailEvent", // ⭐ 상세&이벤트
+  },
+  {
+    id: 10,
+    thumbnail: Design10,
+    title: "매트리스 상세페이지(1688 번역/리디자인)",
+    description:
+      "1688 소싱 제품을 기반으로 제작한 매트리스 상세페이지입니다. 포토샵을 활용해 기존 중국어 텍스트를 자연스럽게 제거한 뒤, GPT를 통해 원문을 검수하며 한국어로 매끄럽게 번역하고, 포토샵 및 피그마를 이용해 재구성했습니다.",
     type: "detailEvent", // ⭐ 상세&이벤트
   },
   {
