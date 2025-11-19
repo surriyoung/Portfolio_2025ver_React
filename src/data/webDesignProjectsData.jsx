@@ -8,6 +8,8 @@ import Design07 from "../assets/design/event-page1.jpg";
 import Design08 from "../assets/design/event-page2.jpg";
 import Design09 from "../assets/design/blog2.jpg";
 import Design10 from "../assets/design/detailed-page3.png";
+import Design11 from "../assets/design/event-page3.gif";
+import Design12 from "../assets/design/event-page4.gif";
 
 const webDesignProjectsData = [
   {
@@ -28,9 +30,9 @@ const webDesignProjectsData = [
   {
     id: 10,
     thumbnail: Design10,
-    title: "매트리스 상세페이지(1688 번역/리디자인)",
+    title: "매트리스 상세페이지\n(1688 번역/리디자인)",
     description:
-      "1688 소싱 제품을 기반으로 제작한 매트리스 상세페이지입니다. 포토샵을 활용해 기존 중국어 텍스트를 자연스럽게 제거한 뒤, GPT를 통해 원문을 검수하며 한국어로 매끄럽게 번역하고, 포토샵 및 피그마를 이용해 재구성했습니다.",
+      "1688 소싱 제품을 기반으로 제작한 매트리스 상세페이지입니다. 포토샵을 활용해 원문 텍스트를 제거한 뒤, GPT를 통해 원문을 검수하며 한국어로 번역하고, 포토샵 및 피그마를 이용해 재구성했습니다.",
     type: "detailEvent", // ⭐ 상세&이벤트
   },
   {
@@ -60,9 +62,25 @@ const webDesignProjectsData = [
   {
     id: 6,
     thumbnail: Design06,
-    title: "펩시 브랜드 위크 이벤트 페이지",
+    title: "펩시 브랜드 위크 이벤트페이지",
     description:
       "펩시 라임 제로의 트렌디함을 강조한 브랜드 이벤트 페이지입니다. 블랙 & 네온 포인트 컬러로 시원하고 세련된 브랜드 아이덴티티를 강화했습니다.",
+    type: "detailEvent", // ⭐ 상세&이벤트
+  },
+  {
+    id: 11,
+    thumbnail: Design11,
+    title: "버거킹 신제품 이벤트페이지\n(미리캔버스 사용)",
+    description:
+      "트러플과 머쉬룸의 고급스러운 풍미를 강조한 버거킹 신제품 프로모션 배너입니다. 깊은 골드 톤과 다크 컬러 대비를 활용해 프리미엄 무드를 전달하고, 제품의 풍미와 시그니처 이미지를 직관적으로 표현했습니다.",
+    type: "detailEvent", // ⭐ 상세&이벤트
+  },
+  {
+    id: 12,
+    thumbnail: Design12,
+    title: "롬앤x조앤프렌즈 이벤트페이지",
+    description:
+      "조앤프렌즈 캐릭터 감성과 롬앤의 무드를 조화롭게 담아낸 콜라보 이벤트페이지로, 파스텔 톤과 부드러운 움직임으로 캐릭터 협업의 경쾌하고 감각적인 분위기를 표현했습니다.",
     type: "detailEvent", // ⭐ 상세&이벤트
   },
   {
