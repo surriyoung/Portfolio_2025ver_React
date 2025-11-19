@@ -30,7 +30,7 @@ const webDesignProjectsData = [
   {
     id: 10,
     thumbnail: Design10,
-    title: "매트리스 상세페이지\n(1688 번역/리디자인)",
+    title: "매트리스 상세페이지",
     description:
       "1688 소싱 제품을 기반으로 제작한 매트리스 상세페이지입니다. 포토샵을 활용해 원문 텍스트를 제거한 뒤, GPT를 통해 원문을 검수하며 한국어로 번역하고, 포토샵 및 피그마를 이용해 재구성했습니다.",
     type: "detailEvent", // ⭐ 상세&이벤트
@@ -70,7 +70,7 @@ const webDesignProjectsData = [
   {
     id: 11,
     thumbnail: Design11,
-    title: "버거킹 신제품 이벤트페이지\n(미리캔버스 사용)",
+    title: "버거킹 신제품 이벤트페이지",
     description:
       "트러플과 머쉬룸의 고급스러운 풍미를 강조한 버거킹 신제품 프로모션 배너입니다. 깊은 골드 톤과 다크 컬러 대비를 활용해 프리미엄 무드를 전달하고, 제품의 풍미와 시그니처 이미지를 직관적으로 표현했습니다.",
     type: "detailEvent", // ⭐ 상세&이벤트
