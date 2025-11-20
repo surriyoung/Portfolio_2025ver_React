@@ -10,6 +10,7 @@ import Design09 from "../assets/design/blog2.jpg";
 import Design10 from "../assets/design/detailed-page3.png";
 import Design11 from "../assets/design/event-page3.gif";
 import Design12 from "../assets/design/event-page4.gif";
+import Design13 from "../assets/design/detailed-page4.png";
 
 const webDesignProjectsData = [
   {
@@ -33,6 +34,14 @@ const webDesignProjectsData = [
     title: "매트리스 상세페이지",
     description:
       "1688 소싱 제품을 기반으로 제작한 매트리스 상세페이지입니다. 포토샵을 활용해 원문 텍스트를 제거한 뒤, GPT를 통해 원문을 검수하며 한국어로 번역하고, 포토샵 및 피그마를 이용해 재구성했습니다.",
+    type: "detailEvent", // ⭐ 상세&이벤트
+  },
+  {
+    id: 13,
+    thumbnail: Design13,
+    title: "부동산 마케팅페이지",
+    description:
+      "부동산 분양 광고 성과를 강조한 랜딩페이지로, 실DB 중심의 지표와 전환 요소를 시각적으로 구성했습니다. 광고 성과·사전예약·문의 전환 등 핵심 데이터를 한눈에 확인할 수 있도록 설계했습니다.",
     type: "detailEvent", // ⭐ 상세&이벤트
   },
   {
