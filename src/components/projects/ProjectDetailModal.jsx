@@ -85,7 +85,7 @@ function ProjectDetailModal({ onClose, project }) {
           ) : (
             <div
               className="screenshot"
-              style={{ width: "100%", aspectRatio: "625 / 409" }}
+              style={{ width: "100%", aspectRatio: "1920 / 1080" }}
             >
               <img src={details.screenshot} alt="프로젝트 스크린샷" />
             </div>

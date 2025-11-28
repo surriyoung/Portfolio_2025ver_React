@@ -11,8 +11,125 @@ import Design10 from "../assets/design/detailed-page3.png";
 import Design11 from "../assets/design/event-page3.gif";
 import Design12 from "../assets/design/event-page4.gif";
 import Design13 from "../assets/design/detailed-page4.png";
+import webDesign01 from "../assets/design/web-design/web-design01.png";
+import webDesign02 from "../assets/design/web-design/web-design02.png";
+import webDesign03 from "../assets/design/web-design/web-design03.png";
+import webDesign04 from "../assets/design/web-design/web-design04.png";
+import webDesign05 from "../assets/design/web-design/web-design05.png";
+import webDesign06 from "../assets/design/web-design/web-design06.png";
+import webDesign07 from "../assets/design/web-design/web-design07.png";
+import webDesign08 from "../assets/design/web-design/web-design08.png";
+import webDesign09 from "../assets/design/web-design/web-design09.png";
+import webDesign10 from "../assets/design/web-design/web-design10.png";
+import webDesign11 from "../assets/design/web-design/web-design11.png";
+import webDesign12 from "../assets/design/web-design/web-design12.png";
+import webDesign13 from "../assets/design/web-design/web-design13.png";
+import webDesignDetail01 from "../assets/design/web-design/web-design-detail01.png";
+import webDesignDetail02 from "../assets/design/web-design/web-design-detail02.png";
+import webDesignDetail03 from "../assets/design/web-design/web-design-detail03.png";
+import webDesignDetail04 from "../assets/design/web-design/web-design-detail04.png";
+import webDesignDetail05 from "../assets/design/web-design/web-design-detail05.png";
+import webDesignDetail06 from "../assets/design/web-design/web-design-detail06.png";
+import webDesignDetail07 from "../assets/design/web-design/web-design-detail07.png";
+import webDesignDetail08 from "../assets/design/web-design/web-design-detail08.png";
+import webDesignDetail09 from "../assets/design/web-design/web-design-detail09.png";
+import webDesignDetail10 from "../assets/design/web-design/web-design-detail10.png";
+import webDesignDetail11 from "../assets/design/web-design/web-design-detail11.png";
+import webDesignDetail12 from "../assets/design/web-design/web-design-detail12.png";
+import webDesignDetail13 from "../assets/design/web-design/web-design-detail13.png";
 
 const webDesignProjectsData = [
+  {
+    id: 13,
+    thumbnail: webDesign01,
+    thumbnail2: webDesignDetail01,
+    title: "병원템플릿A",
+    type: "uiux",
+  },
+  {
+    id: 14,
+    thumbnail: webDesign02,
+    thumbnail2: webDesignDetail02,
+    title: "병원템플릿B",
+    type: "uiux",
+  },
+  {
+    id: 15,
+    thumbnail: webDesign03,
+    thumbnail2: webDesignDetail03,
+    title: "병원템플릿C",
+    type: "uiux",
+  },
+  {
+    id: 16,
+    thumbnail: webDesign04,
+    thumbnail2: webDesignDetail04,
+    title: "병원템플릿D",
+    type: "uiux",
+  },
+  {
+    id: 17,
+    thumbnail: webDesign05,
+    thumbnail2: webDesignDetail05,
+    title: "영롱한마케팅 홈페이지",
+    type: "uiux",
+  },
+  {
+    id: 18,
+    thumbnail: webDesign06,
+    thumbnail2: webDesignDetail06,
+    title: "영롱한의원 홈페이지",
+    type: "uiux",
+  },
+  {
+    id: 19,
+    thumbnail: webDesign07,
+    thumbnail2: webDesignDetail07,
+    title: "웹프림 홈페이지",
+    type: "uiux",
+  },
+  {
+    id: 20,
+    thumbnail: webDesign08,
+    thumbnail2: webDesignDetail08,
+    title: "웹프림 사내패널",
+    type: "uiux",
+  },
+  {
+    id: 21,
+    thumbnail: webDesign09,
+    thumbnail2: webDesignDetail09,
+    title: "브리달메이 홈페이지",
+    type: "uiux",
+  },
+  {
+    id: 22,
+    thumbnail: webDesign10,
+    thumbnail2: webDesignDetail10,
+    title: "화장품 플랫폼 쇼핑몰",
+    type: "uiux",
+  },
+  {
+    id: 23,
+    thumbnail: webDesign11,
+    thumbnail2: webDesignDetail11,
+    title: "다-팜마켓 쇼핑몰",
+    type: "uiux",
+  },
+  {
+    id: 24,
+    thumbnail: webDesign12,
+    thumbnail2: webDesignDetail12,
+    title: "상품권 판매 플랫폼 홈페이지",
+    type: "uiux",
+  },
+  {
+    id: 25,
+    thumbnail: webDesign13,
+    thumbnail2: webDesignDetail13,
+    title: "상품권 매입 플랫폼 홈페이지",
+    type: "uiux",
+  },
   {
     id: 1,
     thumbnail: Design01,

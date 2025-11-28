@@ -35,7 +35,7 @@ function App() {
       <DevTools />
       <Profile />
       <WorkProjects />
-      <ToyProjects />
+      {/* <ToyProjects /> */}
       <WebDesign onOpenModal={openModal} />
       <TopBtn />
       <footer>감사합니다.</footer>

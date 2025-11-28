@@ -34,8 +34,9 @@ function WebDesignDetailModal({ project, onClose }) {
         </div>
 
         <div className="modal-cont design-modal-cont">
-          <span className="tit">개요</span>
-
+          {description && (
+            <span className="tit">개요</span>
+          )}
           {description && (
             <div className="description">
               <p>{description}</p>
@@ -44,9 +45,17 @@ function WebDesignDetailModal({ project, onClose }) {
 
           <span className="line"></span>
 
+          {/* 기본 썸네일 */}
           {thumbnail && (
             <div className="image-single">
               <img src={thumbnail} alt={title} />
+            </div>
+          )}
+
+          {/* UIUX일 때만 두 번째 이미지 표시 */}
+          {type === "uiux" && project.thumbnail2 && (
+            <div className="image-detail">
+              <img src={project.thumbnail2} alt={`${title}-detail`} />
             </div>
           )}
         </div>

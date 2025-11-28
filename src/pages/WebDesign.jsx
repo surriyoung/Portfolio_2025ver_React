@@ -60,7 +60,7 @@ function WebDesign({ onOpenModal }) {
             className={selectedTab === "detailEvent" ? "on" : ""}
             onClick={() => handleTabClick("detailEvent")}
           >
-            상세 & 이벤트 <span className="count">({detailEventCount})</span>
+            디자인A <span className="count">({detailEventCount})</span>
           </li>
         )}
 
@@ -70,7 +70,7 @@ function WebDesign({ onOpenModal }) {
             className={selectedTab === "bannerBlog" ? "on" : ""}
             onClick={() => handleTabClick("bannerBlog")}
           >
-            배너 & 블로그 <span className="count">({bannerBlogCount})</span>
+            디자인B <span className="count">({bannerBlogCount})</span>
           </li>
         )}
 

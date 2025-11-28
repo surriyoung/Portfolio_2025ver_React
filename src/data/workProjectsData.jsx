@@ -17,6 +17,7 @@ import Logo15 from "../assets/projects/work/logo15.svg";
 import Logo16 from "../assets/projects/work/logo16.svg";
 import Logo17 from "../assets/projects/work/logo17.svg";
 import Logo18 from "../assets/projects/work/logo18.svg";
+import Logo19 from "../assets/projects/toy/logo1.png";
 import NoImg from "../assets/projects/work/detail/noimg.png";
 import Screenshot1 from "../assets/projects/work/detail/detail1.png";
 import Screenshot2 from "../assets/projects/work/detail/detail2.png";
@@ -29,8 +30,13 @@ import Screenshot8 from "../assets/projects/work/detail/detail8.png";
 import Screenshot9 from "../assets/projects/work/detail/detail9.png";
 import Screenshot10 from "../assets/projects/work/detail/detail10.png";
 import Screenshot11 from "../assets/projects/work/detail/detail11.png";
-// import Screenshot12 from "../assets/projects/work/detail/detail12.png";
-import Screenshot13 from "../assets/projects/work/detail/detail13.png";
+import Screenshot12 from "../assets/projects/toy/detail/detail1.png";
+import webDesign05 from "../assets/design/web-design/web-design05.png";
+import webDesign06 from "../assets/design/web-design/web-design06.png";
+import webDesign07 from "../assets/design/web-design/web-design07.png";
+import webDesign08 from "../assets/design/web-design/web-design08.png";
+import webDesign09 from "../assets/design/web-design/web-design09.png";
+import webDesign10 from "../assets/design/web-design/web-design10.png";
 
 const toolImages = import.meta.glob("../assets/tools/*.png", { eager: true });
 
@@ -248,6 +254,20 @@ const workProjectsData = [
     },
   },
   {
+    logo: Logo19,
+    title: "스카이덕디자인 푸시알림앱",
+    cont: "디자인100%, 플러터 앱 개발 100%",
+    type: "flutter",
+    design: "figma",
+    devItems,
+    details: {
+      overview:
+        "스카이덕디자인업체의 의뢰로 진행된 프로젝트입니다. PHP로 개발된 웹페이지에서 의뢰 신청 시, 앱에 푸시 알림이 전송되고 의뢰 내역이 실시간으로 표시되는 견적 알림 앱을 구현했습니다. Android용 APK 파일로 빌드하여 제공되었습니다",
+      screenshot: Screenshot12,
+      projectType: "외주 프로젝트",
+    },
+  },
+  {
     logo: Logo12,
     title: "영롱한마케팅 홈페이지",
     cont: "디자인 100%, 퍼블리싱 100%",
@@ -260,7 +280,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://ylmarketing.co.kr/",
-      screenshot: NoImg,
+      screenshot: webDesign05,
     },
   },
   {
@@ -276,7 +296,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://ylclinic2.ylmarketing.kr/",
-      screenshot: NoImg,
+      screenshot: webDesign06,
     },
   },
   {
@@ -293,7 +313,7 @@ const workProjectsData = [
       team: "디자인1, 프론트1, 백엔드1",
       shortcut:
         "https://webpreme.com/",
-      screenshot: NoImg,
+      screenshot: webDesign07,
     },
   },
   {
@@ -309,7 +329,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://webpreme.com/portfolio/46",
-      screenshot: NoImg,
+      screenshot: webDesign08,
     },
   },
   {
@@ -325,7 +345,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://bridalmay.webpreme.net/",
-      screenshot: NoImg,
+      screenshot: webDesign09,
     },
   },
   {
@@ -341,7 +361,7 @@ const workProjectsData = [
       projectType: "실무 프로젝트",
       shortcut:
         "https://webpreme.com/portfolio/56",
-      screenshot: NoImg,
+      screenshot: webDesign10,
     },
   },
   {
