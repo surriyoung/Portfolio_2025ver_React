@@ -40,7 +40,7 @@ import webDesignDetail13 from "../assets/design/web-design/web-design-detail13.p
 
 const webDesignProjectsData = [
   {
-    id: 13,
+    id: 26,
     thumbnail: webDesign01,
     thumbnail2: webDesignDetail01,
     title: "병원템플릿A",
