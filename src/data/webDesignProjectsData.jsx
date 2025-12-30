@@ -40,34 +40,6 @@ import webDesignDetail13 from "../assets/design/web-design/web-design-detail13.p
 
 const webDesignProjectsData = [
   {
-    id: 26,
-    thumbnail: webDesign01,
-    thumbnail2: webDesignDetail01,
-    title: "병원템플릿A",
-    type: "uiux",
-  },
-  {
-    id: 14,
-    thumbnail: webDesign02,
-    thumbnail2: webDesignDetail02,
-    title: "병원템플릿B",
-    type: "uiux",
-  },
-  {
-    id: 15,
-    thumbnail: webDesign03,
-    thumbnail2: webDesignDetail03,
-    title: "병원템플릿C",
-    type: "uiux",
-  },
-  {
-    id: 16,
-    thumbnail: webDesign04,
-    thumbnail2: webDesignDetail04,
-    title: "병원템플릿D",
-    type: "uiux",
-  },
-  {
     id: 17,
     thumbnail: webDesign05,
     thumbnail2: webDesignDetail05,
@@ -128,6 +100,34 @@ const webDesignProjectsData = [
     thumbnail: webDesign13,
     thumbnail2: webDesignDetail13,
     title: "상품권 매입 플랫폼 홈페이지",
+    type: "uiux",
+  },
+  {
+    id: 26,
+    thumbnail: webDesign01,
+    thumbnail2: webDesignDetail01,
+    title: "병원템플릿A",
+    type: "uiux",
+  },
+  {
+    id: 14,
+    thumbnail: webDesign02,
+    thumbnail2: webDesignDetail02,
+    title: "병원템플릿B",
+    type: "uiux",
+  },
+  {
+    id: 15,
+    thumbnail: webDesign03,
+    thumbnail2: webDesignDetail03,
+    title: "병원템플릿C",
+    type: "uiux",
+  },
+  {
+    id: 16,
+    thumbnail: webDesign04,
+    thumbnail2: webDesignDetail04,
+    title: "병원템플릿D",
     type: "uiux",
   },
   {
