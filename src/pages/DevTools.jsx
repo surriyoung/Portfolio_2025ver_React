@@ -27,6 +27,9 @@ const toolNames = [
   "Vite",
   "VLLO",
   "그누보드5",
+  "카페24",
+  "아임웹",
+  "퍼스트몰",
 ];
 
 const devItems = imageList.map((img, index) => ({
