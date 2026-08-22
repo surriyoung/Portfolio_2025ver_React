@@ -12,6 +12,10 @@ function ToolsCont({ items, type = "all", design = "" }) {
     filteredItems = items.slice(8, 9); // tool18.png
   } else if (type === "sir") {
     filteredItems = [items[5], items[6], items[7], items[14]];
+  } else if (type === "imweb") {
+    filteredItems = [items[5], items[6], items[7], items[16]];
+  } else if (type === "first") {
+    filteredItems = [items[5], items[6], items[7], items[17]];
   }
 
   // design 필터 추가

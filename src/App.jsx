@@ -35,8 +35,8 @@ function App() {
       <DevTools />
       <Profile />
       <WorkProjects />
-      {/* <ToyProjects /> */}
-      <WebDesign onOpenModal={openModal} />
+      <ToyProjects />
+      {/* <WebDesign onOpenModal={openModal} /> */}
       <TopBtn />
       <footer>감사합니다.</footer>
       {/* ⭐ 전역 모달 렌더링 영역 */}

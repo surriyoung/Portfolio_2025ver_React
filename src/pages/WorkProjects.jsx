@@ -5,6 +5,9 @@ import SubTitle from "../components/SubTitle";
 import Title from "../components/Title";
 import workProjectsData from "../data/workProjectsData";
 
+// 퍼블리싱 및 웹 솔루션에 해당하는 타입 정의 (그누보드 sir, 아임웹 imweb 포함)
+const PUBLISHING_TYPES = ["web", "webapp", "sir", "imweb", "first"];
+
 function WorkProjects() {
   const [selectedTab, setSelectedTab] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -15,8 +18,8 @@ function WorkProjects() {
 
   // 각 타입별 개수 계산
   const totalCount = workProjectsData.length;
-  const publishingCount = workProjectsData.filter(
-    (p) => p.type === "web" || p.type === "webapp" || p.type === "sir"
+  const publishingCount = workProjectsData.filter((p) =>
+    PUBLISHING_TYPES.includes(p.type)
   ).length;
   const flutterCount = workProjectsData.filter(
     (p) => p.type === "flutter"
@@ -26,8 +29,7 @@ function WorkProjects() {
   const filteredProjects = workProjectsData.filter((project) => {
     if (selectedTab === "all") return true;
     if (selectedTab === "flutter") return project.type === "flutter";
-    if (selectedTab === "publishing")
-      return project.type === "web" || project.type === "webapp" || project.type === "sir";
+    if (selectedTab === "publishing") return PUBLISHING_TYPES.includes(project.type);
     return false;
   });
 
@@ -76,6 +78,7 @@ function WorkProjects() {
             title={project.title}
             cont={project.cont}
             type={project.type}
+            design={project.design}
             devItems={project.devItems}
             onClick={() => handleOpenModal(project)}
           />

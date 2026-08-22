@@ -252,7 +252,7 @@ h4 {
   margin-bottom: 0;
 }
 .profile-cont .date {
-  width: 170px;
+  width: 190px;
   flex-shrink: 0;
 }
 .profile-cont .date span:first-child {
@@ -424,6 +424,7 @@ section.skills {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 .project-tile-top img {
   height: 1.5rem;
@@ -483,33 +484,81 @@ section.skills {
 .work-project .project-tile:nth-child(11):hover {
   background-color: #054A97;
 }
-.work-project .project-tile:nth-child(12):hover {
+/* .work-project .project-tile:nth-child(12):hover {
   background-color: #1558a5;
-}
-.work-project .project-tile:nth-child(13):hover {
+} */
+.work-project .project-tile:nth-child(12):hover {
   background-color: #4E2FC1;
 }
-.work-project .project-tile:nth-child(14):hover {
+.work-project .project-tile:nth-child(13):hover {
   background-color: #554C42;
 }
-.work-project .project-tile:nth-child(15):hover {
+.work-project .project-tile:nth-child(14):hover {
   background-color: #003CFF;
 }
-.work-project .project-tile:nth-child(16):hover {
+.work-project .project-tile:nth-child(15):hover {
   background-color: #003BFF;
 }
-.work-project .project-tile:nth-child(17):hover {
+.work-project .project-tile:nth-child(16):hover {
   background-color: #B49E8F;
 }
-.work-project .project-tile:nth-child(18):hover {
+.work-project .project-tile:nth-child(17):hover {
   background-color: #D36B82;
 }
-.work-project .project-tile:nth-child(19):hover {
+.work-project .project-tile:nth-child(18):hover {
   background-color: #003366;
 }
-.work-project .project-tile:nth-child(20):hover {
+.work-project .project-tile:nth-child(19):hover {
   background-color: #ff3232;
 }
+.work-project .project-tile:nth-child(21):hover {
+  background-color: #005504;
+}
+.work-project .project-tile:nth-child(21):hover {
+  background-color: #000;
+}
+.work-project .project-tile:nth-child(22):hover {
+  background-color: #000;
+}
+.work-project .project-tile:nth-child(23):hover {
+  background-color: #061D61;
+}
+.work-project .project-tile:nth-child(24):hover {
+  background-color: #FF6600;
+}
+.work-project .project-tile:nth-child(25):hover {
+  background-color: #7A4A6E;
+}
+.work-project .project-tile:nth-child(26):hover {
+  background-color: #2461E9;
+}
+.work-project .project-tile:nth-child(27):hover {
+  background-color: #00C896;
+}
+.work-project .project-tile:nth-child(28):hover {
+  background-color: #009178;
+}
+.work-project .project-tile:nth-child(29):hover {
+  background-color: #1E3A5F;
+}
+.work-project .project-tile:nth-child(30):hover {
+  background-color: #FF4D4F;
+}
+.work-project .project-tile:nth-child(31):hover {
+  background-color: #272525;
+}
+.work-project .project-tile:nth-child(32):hover {
+  background-color: #25257D;
+}
+.work-project .project-tile:nth-child(33):hover {
+  background-color: #6366F1;
+}
+.work-project .project-tile:nth-child(34):hover {
+  background-color: #005EDE;
+}
+
+
+
 .toy-project .project-tile:nth-child(1):hover {
   background-color: #1558a5;
 }
@@ -569,11 +618,11 @@ section.skills {
   background-color: #ebebeb;
 }
 .modal-tit {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .modal-tit > img {
   height: 1.5rem;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .modal-tit > h5 {
   font-size: 1.5rem;
@@ -612,6 +661,13 @@ section.skills {
   height: 1px;
   background-color: var(--bg_grey);
   margin: 32px 0;
+}
+.modal .modal-loading,
+.modal .screenshot {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920/1080;
+  overflow: hidden;
 }
 .modal-cont > li a p {
   text-decoration: underline;

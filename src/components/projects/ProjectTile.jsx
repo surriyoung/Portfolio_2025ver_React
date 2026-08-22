@@ -1,5 +1,14 @@
 import ToolsCont from "../devtools/ToolsCont";
 
+const TYPE_LABELS = {
+  web: "웹 퍼블리싱",
+  webapp: "웹앱 퍼블리싱",
+  flutter: "플러터 앱 개발",
+  sir: "그누보드 퍼블리싱",
+  imweb: "아임웹 퍼블리싱",
+  first: "퍼스트몰 퍼블리싱",
+};
+
 function ProjectTile({
   title,
   cont,
@@ -20,21 +29,12 @@ function ProjectTile({
       <div className="project-tile-top">
         <img src={logo} alt={title} />
         <p>{title}</p>
-        <p>
-          {type === "web"
-            ? "웹 퍼블리싱"
-            : type === "webapp"
-            ? "웹앱 퍼블리싱"
-            : type === "flutter"
-            ? "플러터 앱 개발"
-            : type === "sir"
-            ? "그누보드 퍼블리싱"
-            : "리액트 프론트 개발 "}
-        </p>
+        <p>{TYPE_LABELS[type] || "리액트 프론트 개발"}</p>
         <span>{cont}</span>
       </div>
       <ToolsCont items={devItems} type={type} design={design} />
     </li>
   );
 }
+
 export default ProjectTile;
