@@ -17,7 +17,7 @@ import Logo15 from "../assets/projects/work/logo15.svg";
 import Logo16 from "../assets/projects/work/logo16.svg";
 import Logo17 from "../assets/projects/work/logo17.svg";
 import Logo18 from "../assets/projects/work/logo18.svg";
-import Logo19 from "../assets/projects/work/Logo19.svg";
+import Logo19 from "../assets/projects/work/logo19.svg";
 import Logo20 from "../assets/projects/work/logo20.svg";
 import Logo21 from "../assets/projects/work/logo21.png";
 import Logo22 from "../assets/projects/work/logo22.png";
