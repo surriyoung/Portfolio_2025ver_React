@@ -53,9 +53,9 @@ function ToyProjects() {
     <section className="observe-target projects toy-project" data-aos="fade-up">
       <Title title="사이드 프로젝트" />
       <SubTitle>
-        실전 감각을 기르기 위해 다양한 프로젝트를 개발하며
+        새로운 기술 스택을 탐구하고
         <br />
-        프론트엔드 기술에 대한 깊이를 더했습니다.
+        아이디어를 직접 구현하며 폭을 넓힌 개인 프로젝트입니다
       </SubTitle>
       {/* <ul className="project-tab">
         <li>프론트개발</li>

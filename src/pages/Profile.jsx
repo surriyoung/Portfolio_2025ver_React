@@ -15,19 +15,19 @@ const profileData1 = [
     date: "2025.05 - 2025.07",
     title: "영롱한마케팅",
     description: "UI/UX 디자인, 웹 퍼블리싱",
-    leaveReason: "조직 개편 및 사업 방향 조정으로 웹프림으로 합류",
+    leaveReason: "사업 부문 통합 및 조직 개편에 따른 소속 전환",
   },
   {
     date: "2025.03 - 2025.05",
     title: "비젼IPS",
     description: "웹 퍼블리싱, 리액트 프론트앤드 개발",
-    leaveReason: "프론트엔드 고도화 프로젝트 종료",
+    leaveReason: "프론트엔드 구축 및 고도화 프로젝트 종료",
   },
   {
     date: "2023.09 - 2024.10",
     title: "플래시21",
     description: "웹 퍼블리싱, 플랫폼 앱 개발(Flutter)",
-    leaveReason: "회사 경영 악화(급여 지연 및 업무 축소)",
+    leaveReason: "직무 전문성 확장을 위한 퇴사",
   },
 ];
 
@@ -46,7 +46,7 @@ const profileData2 = [
   {
     date: "2020.03 - 2023.02",
     title: "가톨릭대학교 공간디자인소비자학과·미디어기술콘텐츠학과",
-    description: "소비자학, 영상 콘텐츠 제작과 관련된 기술 및 이론 학습",
+    description: "소비자학, 콘텐츠 제작과 관련된 기술 및 이론 학습",
   },
 ];
 

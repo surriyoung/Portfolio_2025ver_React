@@ -3,7 +3,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Loading = () => {
   return (
-    <div style={{ width: "100%", aspectRatio: "625 / 409" }}>
+    <div style={{ width: "100%", aspectRatio: "1920 / 1080" }}>
       <Skeleton height="100%" style={{ borderRadius: "10px" }} />
     </div>
   );

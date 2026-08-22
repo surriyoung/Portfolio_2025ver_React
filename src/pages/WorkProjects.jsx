@@ -44,9 +44,9 @@ function WorkProjects() {
     >
       <Title title="실무 프로젝트" />
       <SubTitle>
-        반응형 웹 퍼블리싱, 웹앱 퍼블리싱, 플러터 앱 개발을 통해
+        반응형 웹부터 크로스 플랫폼 앱까지
         <br />
-        효율적인 사용자 경험을 제공하는 실무 프로젝트를 진행했습니다
+        직관적인 사용자 경험과 안정적인 기능을 구현했습니다
       </SubTitle>
 
       <ul className="project-tab">
@@ -71,7 +71,7 @@ function WorkProjects() {
       </ul>
 
       <ul className="project-tile-wrap">
-        {filteredProjects.map((project, index) => (
+        {filteredProjects.toReversed().map((project, index) => (
           <ProjectTile
             key={index}
             logo={project.logo}
